@@ -179,7 +179,7 @@ const quizQuestions = [
   // Types of Assessments
   {topic:"Types of Assessments",q:"Under SAS, the original assessment is essentially:",options:["Issued by the Director General","The taxpayer's own return as deemed assessment","A court order","An audit finding"],answer:1,explain:"Under SAS, the tax return filed by the taxpayer constitutes the original assessment (deemed assessment)."},
   {topic:"Types of Assessments",q:"An additional assessment is raised when:",options:["The taxpayer overpaid tax","Income was not assessed or was under-assessed","The taxpayer files early","A refund is due"],answer:1,explain:"The Director General may raise an additional assessment under Section 91 when any income has not been assessed or has been assessed at an amount less than it should have been."},
-  {topic:"Types of Assessments",q:"A composite assessment combines:",options:["Two different tax types","Assessments for multiple years of assessment","Individual and company tax","Income tax and stamp duty"],answer:1,explain:"A composite assessment is an assessment covering two or more years of assessment in one assessment."},
+  {topic:"Types of Assessments",q:"A composite assessment normally combines:",options:["Two different tax types","Assessments for multiple years of assessment (YAs)","Individual and company tax","Income tax and stamp duty"],answer:1,explain:"A composite assessment is an assessment normally covering two or more years of assessment in one assessment, after taxpayer has been discovered as committing an offence which resulted in an undercharge of tax."},
   {topic:"Types of Assessments",q:"An increased assessment resulting from a successful appeal is made when the Director General:",options:["Wants to reduce tax","Discovers that the tax assessed is less than it should be","Receives a refund claim","Closes an audit with no findings"],answer:1,explain:"Following an appeal, an increased assessment is raised when a previous assessment is found to be less than it should have been."},
   {topic:"Types of Assessments",q:"A reduced assessment resulting from a successful appeal is issued when:",options:["More tax is owed","The taxpayer was overcharged and assessment should be lowered","The taxpayer appeals","A new tax law is passed"],answer:1,explain:"A reduced assessment is made when the Director General is satisfied that the original assessment was excessive."},
   {topic:"Types of Assessments",q:"A protective assessment is raised when:",options:["The taxpayer is cooperative","There is doubt about facts and the DG wants to protect revenue","Tax has been fully paid","The audit is complete with no issues"],answer:1,explain:"A protective assessment is raised as a precautionary measure when there's uncertainty about facts or legal interpretation, to protect government revenue within the statutory time limit."},
@@ -194,7 +194,7 @@ const quizQuestions = [
   {topic:"Monthly Tax Deduction",q:"What is the Malay term for Monthly Tax Deduction (MTD)?",options:["Cukai Bulanan","Potongan Cukai Bulanan (PCB)","Bayaran Cukai Bulanan","Cukai Pendapatan Bulanan"],answer:1,explain:"Monthly Tax Deduction is known as Potongan Cukai Bulanan (PCB) in Malay."},
   {topic:"Monthly Tax Deduction",q:"Who is responsible for deducting PCB from an employee's salary?",options:["The employee themselves","The employer","The IRB","The bank"],answer:1,explain:"The employer is legally required to deduct PCB from the employee's monthly remuneration and remit it to the IRB."},
   {topic:"Monthly Tax Deduction",q:"PCB must be remitted to the IRB by which day of the following month?",options:["7th","10th","15th","Last day"],answer:2,explain:"Employers must remit the PCB deducted to the IRB by the 15th of the following month."},
-  {topic:"Monthly Tax Deduction",q:"PCB can be treated as the final tax if the taxpayer:",options:["Earns over RM1 million","Has only employment income, is resident, and PCB is correctly computed","Is non-resident","Owns a business"],answer:1,explain:"PCB can be treated as final tax if the individual is resident, has only employment income, tax is correctly computed, and they opt not to file a return (subject to conditions under Section 77(1A))."},
+  {topic:"Monthly Tax Deduction",q:"PCB can be treated as the final tax if the taxpayer:",options:["Earns over RM1 million","Has only employment income, the taxpayer's tax is not borne by the employer, and the taxpayer's spouse does not elect for joint assessment","Is non-resident","Owns a business"],answer:1,explain:"PCB can be treated as final tax if the taxpayer has only employment income from the same employer, the taxpayer's tax is not borne by the employer, and the taxpayer's spouse does not elect for joint assessment (subject to conditions under Section 77C)."},
 
   // Responsibilities of Taxpayers
   {topic:"Taxpayer Responsibilities",q:"Every individual with chargeable income must do what?",options:["Wait for IRB to contact them","Register a tax file, file returns, and pay tax due","Only file if they receive a notice","Pay tax only when audited"],answer:1,explain:"Taxpayers are responsible for registering a tax file with IRB, filing accurate returns by the due date, and paying any tax payable."},
@@ -202,10 +202,10 @@ const quizQuestions = [
   {topic:"Taxpayer Responsibilities",q:"A taxpayer must notify the IRB of a change of address within:",options:["14 days","1 month","3 months","6 months"],answer:2,explain:"A taxpayer must inform the IRB of any change of address within 3 months of the change."},
 
   // Fines and Penalties
-  {topic:"Fines & Penalties",q:"What is the penalty for late filing of a tax return?",options:["No penalty","Increase of 10% on tax payable","Increase of 20% on tax payable","Imprisonment only"],answer:1,explain:"Under Section 112(3), failure to furnish a return by the due date results in a penalty of 10% increase on the tax payable (if no prosecution)."},
+  {topic:"Fines & Penalties",q:"What is the penalty for failure to furnish a tax return?",options:["No penalty","Fine between RM200 and RM20,000 or imprisonment up to 6 months or both","Increase of 10% on tax payable","Imprisonment only"],answer:1,explain:"Under Section 112(1), failure to furnish a return by the due date results in a penalty of RM200 to RM20,000, or imprisonment up to 6 months, or both."},
   {topic:"Fines & Penalties",q:"Tax evasion under Section 114 can result in:",options:["Warning letter only","Fine of RM1,000 to RM20,000 and/or imprisonment up to 3 years, plus 300% penalty","Only a 10% penalty","Community service"],answer:1,explain:"Section 114 provides for a fine of RM1,000 to RM20,000 and/or imprisonment up to 3 years, plus a special penalty of 300% of the tax undercharged."},
-  {topic:"Fines & Penalties",q:"An employer who fails to deduct and remit PCB commits an offence and may face:",options:["No consequence","A fine of RM200 to RM20,000 and/or imprisonment up to 6 months","Only a warning","Fine of RM50"],answer:1,explain:"Under Section 120(1), failure to deduct and remit PCB is an offence carrying a fine of RM200–RM20,000 and/or imprisonment up to 6 months."},
-  {topic:"Fines & Penalties",q:"What penalty applies for incorrect tax returns due to negligence (not fraud)?",options:["No penalty","Penalty equal to the amount of tax undercharged (100%)","300% penalty","500% penalty"],answer:1,explain:"Under Section 113(2), an incorrect return due to negligence or carelessness (without fraud) attracts a penalty equal to the tax undercharged (100%)."},
+  {topic:"Fines & Penalties",q:"An employer who fails to deduct and remit PCB by the due date commits an offence and may face:",options:["No consequence","A fine of RM200 to RM20,000 and/or imprisonment up to 6 months","Only a warning","Fine of RM50"],answer:1,explain:"Under Section 120(1), failure to deduct and remit PCB is an offence carrying a fine of RM200–RM20,000 and/or imprisonment up to 6 months."},
+  {topic:"Fines & Penalties",q:"What penalty applies for making incorrect tax returns by understating income?",options:["No penalty","RM1,000 to RM10,000, and additional penalty up to 200% of the tax undercharged","300% penalty","Penalty equal to the amount of tax undercharged (100%)"],answer:1,explain:"Under Section 113(1)(a), providing an incorrect return by omitting or understating any income attracts a penalty of RM1,000 to RM10,000, and additional penalty up to 200% of the tax undercharged."},
 ];
 
 const matchSets = [
@@ -220,24 +220,24 @@ const matchSets = [
   {title:"Types of Assessments",pairs:[
     {term:"Original",def:"Deemed assessment from taxpayer's return"},
     {term:"Additional",def:"Income not assessed or under-assessed"},
-    {term:"Composite",def:"Covers multiple years of assessment"},
-    {term:"Increased",def:"Previous assessment was too low"},
-    {term:"Reduced",def:"Previous assessment was excessive"},
-    {term:"Protective",def:"Precautionary — uncertainty about facts"},
+    {term:"Composite",def:"Normally covers multiple years of assessment after tax investigation or audit is conducted"},
+    {term:"Increased",def:"when appeal results in an increase in the amount of tax liability"},
+    {term:"Reduced",def:"when appeal results in an increase in the amount of tax liability"},
+    {term:"Protective",def:"Precautionary — to avoid time bar"},
   ]},
   {title:"Key Deadlines",pairs:[
     {term:"30 April",def:"Form BE filing deadline"},
     {term:"30 June",def:"Form B filing deadline"},
     {term:"15th of next month",def:"PCB remittance deadline"},
-    {term:"30 days",def:"Time to file Notice of Appeal"},
-    {term:"6 months",def:"Period to amend individual return"},
+    {term:"30 days",def:"Time to file Notice of Appeal (Form Q)"},
+    {term:"6 months",def:"Period to amend individual tax return"},
     {term:"7 years",def:"Record keeping period"},
   ]},
-  {title:"Penalties & Sections",pairs:[
-    {term:"Section 112(3)",def:"10% penalty for late filing"},
-    {term:"Section 113(2)",def:"100% penalty for negligent return"},
-    {term:"Section 114",def:"300% penalty + fine/jail for evasion"},
-    {term:"Section 120(1)",def:"Employer fails to remit PCB"},
+  {title:"Offence & Penalty",pairs:[
+    {term:"Late payment of tax",def:"10% penalty on unpaid tax"},
+    {term:"Leave country without paying tax",def:"RM200 to RM20,000 or imprisonment up to 6 months, or both"},
+    {term:"Tax evasion",def:"RM1,000 to RM20,0000 or imprisonment up to 3 years, or both AND 300% penalty"},
+    {term:"Fail to keep records and documenations",def:"RM300 to RM10,000 or imprisonment up to 1 year, or both"},
   ]},
   {title:"IRB & SAS Concepts",pairs:[
     {term:"LHDNM",def:"Malay name for IRB"},
